@@ -1,7 +1,9 @@
 // Manejo del menú desplegable (dropdown)
 document.addEventListener('DOMContentLoaded', function() {
     const dropdowns = document.querySelectorAll('.dropdown');
+    const nav = document.getElementById('mainNav');
     
+    // ---------- DROPDOWNS ----------
     dropdowns.forEach(dropdown => {
         const toggle = dropdown.querySelector('.dropdown-toggle');
         
@@ -15,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
-            // Toggle el dropdown actual
+            // Toggle actual
             dropdown.classList.toggle('active');
         });
     });
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Cerrar dropdown al hacer click en un sublink
+    // Cerrar dropdown al tocar sublink
     const dropdownLinks = document.querySelectorAll('.dropdown-menu a');
     dropdownLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -39,12 +41,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Smooth scroll
+    // ---------- CERRAR MENÚ MÓVIL SOLO EN LINKS REALES ----------
+    const navLinks = document.querySelectorAll(
+        '.nav-links a:not(.dropdown-toggle)'
+    );
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                nav.classList.remove('active');
+            }
+        });
+    });
+    
+    // ---------- SMOOTH SCROLL ----------
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
+                e.preventDefault();
                 target.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
@@ -53,3 +68,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// ---------- BOTÓN MENÚ ----------
+function toggleMobileMenu() {
+    const nav = document.getElementById('mainNav');
+    nav.classList.toggle('active');
+}
