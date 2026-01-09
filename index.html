@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+ 
 <body>
     <header class="header">
         <div class="logo-container">
@@ -22,10 +23,11 @@
         <ul class="nav-links">
             <!-- Menú Desayunos con Dropdown -->
             <li class="dropdown">
-                <a href="#desayunos" class="dropdown-toggle">
+                <a class="dropdown-toggle">
                     Desayunos <i class="fas fa-chevron-down"></i>
                 </a>
                 <ul class="dropdown-menu">
+                    <li><a href="#paracomenzar">Tazón de fruta</a></li>
                     <li><a href="#huevos">Huevos</a></li>
                     <li><a href="#omellets">Omellets</a></li>
                     <li><a href="#chilaquiles">Chilaquiles</a></li>
@@ -36,16 +38,16 @@
 
             <!-- Menú Bebidas con Dropdown -->
             <li class="dropdown">
-                <a href="#bebidas" class="dropdown-toggle">
-                    Bebidas <i class="fas fa-chevron-down"></i>
-                </a>
+                <a class="dropdown-toggle">Bebidas <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="#bebidas-calientes">Bebidas Calientes</a></li>
                     <li><a href="#bebidas-bobba">Bebidas con Bobba</a></li>
                     <li><a href="#tisana-bobba">Tisana Boba Tea</a></li>
                     <li><a href="#bebidas-frias">Bebidas Frías</a></li>
                     <li><a href="#frapuccinos">Frapuccinos</a></li>
+                    <li><a href="#esencias">Esencias</a></li>
                 </ul>
+                
             </li>
 
             <!-- Postres (sin dropdown) -->
@@ -63,17 +65,6 @@
                 </ul>
             </li>
 
-            <!-- Menú Esencias con Dropdown -->
-            <li class="dropdown">
-                <a href="#esencias" class="dropdown-toggle">
-                    Esencias <i class="fas fa-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#esencias-frias">Bebidas Frías</a></li>
-                    <li><a href="#esencias-calientes">Bebidas Calientes</a></li>
-                </ul>
-            </li>
-
             <!-- Contacto (sin dropdown) -->
             <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -85,7 +76,7 @@
         <section id="desayunos" class="section">
             <h2 class="section-title">Desayunos</h2>
 
-            <div class="category">
+            <div id="paracomenzar" class="category">
                 <h3 class="category-title">Para Comenzar</h3>
                 
                 <div class="menu-item">
@@ -1137,9 +1128,60 @@
                     <span class="item-price">M - $85.00     G - $95.00</span>
                 </div>
             </div>
+            <!-- ============= EScENCIAS ============= -->
+            <section id="esencias" class="section">
+            <h2 class="section-title">Esencias</h2>
+
+            <div class="esencias-grid">
+
+            <!-- BEBIDAS FRÍAS -->
+            <div class="esencias-col frias">
+            <h3 class="category-title">Bebidas frías</h3>
+            <ul class="esencias-list">
+                <li>Jamaica</li>
+                <li>Lima</li>
+                <li>Mandarina</li>
+                <li>Sandía</li>
+                <li>Mora azul</li>
+                <li>Fresa</li>
+                <li>Frambuesa</li>
+                <li>Kiwi</li>
+                <li>Piña</li>
+                <li>Mango</li>
+                <li>Granada</li>
+                <li>Cereza</li>
+                <li>Manzana verde</li>
+            </ul>
             </div>
 
-        
+            <!-- BEBIDAS CALIENTES -->
+            <div class="esencias-col calientes">
+            <h3 class="category-title">Bebidas calientes</h3>
+            <ul class="esencias-list">
+                <li>Lavanda</li>
+                <li>Menta</li>
+                <li>Chai</li>
+                <li>Rosas</li>
+                <li>Manzana</li>
+                <li>Ron con mantequilla</li>
+                <li>Ron con frambuesa</li>
+                <li>Coco</li>
+                <li>Crema irlandesa</li>
+                <li>Tiramisú</li>
+                <li>Vainilla</li>
+                <li>Caramelo</li>
+                <li>Avellana</li>
+                <li>Canela</li>
+                <li>Amaretto</li>
+                <li>Plátano</li>
+                <li>Calabaza</li>
+                <li>Bombón tostado</li>
+                <li>Galleta de jengibre</li>
+            </ul>
+            </div>
+
+        </div>
+     </div>
 
     </section>
 
@@ -1275,9 +1317,4 @@
         </div>
     </section>
 </div>
-
-<footer>
-    <p>&copy; 2025 Rustico Coffee Shop. Todos los derechos reservados.</p>
-    <p>Ensenada, Baja California, México</p>
-</footer>
 

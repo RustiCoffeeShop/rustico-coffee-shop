@@ -398,16 +398,6 @@ h1 {
     color: white;
 }
 
-footer {
-    background: rgba(61, 43, 31, 0.95);
-    color: #F5E6D3;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    border-top: 3px solid #D4A574;
-    font-size: 0.9rem;
-}
-
 /* ===================================== */
 /* RESPONSIVE - OPTIMIZADO MÓVIL */
 /* ===================================== */
@@ -534,4 +524,77 @@ footer {
     .item-price {
         font-size: 1rem;
     }
+}
+
+/* CONTENEDOR GENERAL */
+#esencias {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4eedf;
+}
+
+/* TÍTULO PRINCIPAL */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    color: #3D2B1F;
+}
+
+/* GRID 2 COLUMNAS */
+.esencias-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* COLUMNA */
+.esencias-col {
+    padding: 2rem;
+    color: white;
+}
+
+/* FONDOS COMO LA IMAGEN */
+.frias {
+    background-color: #4b5a1a;
+}
+
+.calientes {
+    background-color: #4a3a18;
+}
+
+/* SUBTÍTULOS */
+.category-title {
+    background-color: #efe9d5;
+    color: #3D2B1F;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* LISTA */
+.esencias-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.esencias-list li {
+    margin-bottom: 0.6rem;
+    letter-spacing: 2px;
+    font-size: 0.rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* VIÑETA */
+.esencias-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
 }
