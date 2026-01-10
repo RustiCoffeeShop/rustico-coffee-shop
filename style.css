@@ -289,7 +289,7 @@ h1 {
 .item-name {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #3D2B1F;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -345,7 +345,7 @@ h1 {
     }
 
     .item-name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         width: 100%;
     }
 
@@ -374,7 +374,7 @@ h1 {
     }
 
     .item-name {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .item-price {
@@ -514,16 +514,6 @@ h1 {
 .social-icon.instagram:hover {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
-}
-
-footer {
-    background: rgba(61, 43, 31, 0.95);
-    color: #F5E6D3;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    border-top: 3px solid #D4A574;
-    font-size: 0.9rem;
 }
 
 /* ===================================== */
