@@ -326,8 +326,8 @@ h1 {
 
     /* IMAGEN ARRIBA - CON BORDER RADIUS */
     .item-image {
-        width: 200%;
-        min-width: 200%;
+        width: 100%;
+        min-width: 100%;
         height: 250px;
         object-fit: cover;
         border-radius: 12px;
