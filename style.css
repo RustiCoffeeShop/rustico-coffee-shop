@@ -606,8 +606,9 @@ h1 {
         width: 100%;
         min-width: 100%;
         height: 250px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 12px;
+        background-color: white;
     }
 
     .item-content {
@@ -711,6 +712,8 @@ h1 {
     .item-image {
         height: 220px;
         border-radius: 6px;
+        object-fit: contain;
+        background-color: white;
     }
 
     .item-content {
