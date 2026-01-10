@@ -313,81 +313,6 @@ h1 {
 }
 
 /* ===================================== */
-/* RESPONSIVE - MODO CELULAR */
-/* ===================================== */
-
-@media (max-width: 768px) {
-    /* CAMBIAR A DISEÑO VERTICAL CON PADDING ALREDEDOR */
-    .menu-item {
-        flex-direction: column;
-        margin-bottom: 1.5rem;
-        padding: 1rem;
-    }
-
-    /* IMAGEN ARRIBA - CON BORDER RADIUS */
-    .item-image {
-        width: 100%;
-        min-width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 12px;
-    }
-
-    .item-content {
-        padding: 1.2rem 0.5rem 0.5rem 0.5rem;
-    }
-
-    /* TÍTULO Y PRECIO UNO DEBAJO DEL OTRO */
-    .item-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .item-name {
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
-    .item-price {
-        font-size: 1.4rem;
-    }
-
-    .item-description {
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-}
-
-@media (max-width: 480px) {
-    .menu-item {
-        padding: 0.8rem;
-    }
-
-    .item-image {
-        height: 220px;
-        border-radius: 6px;
-    }
-
-    .item-content {
-        padding: 1rem 0.3rem 0.3rem 0.3rem;
-    }
-
-    .item-name {
-        font-size: 1.2rem;
-    }
-
-    .item-price {
-        font-size: 1.3rem;
-    }
-
-    .item-description {
-        font-size: 0.9rem;
-    }
-}
-
-/* ===================================== */
 /* SECCIÓN DE CONTACTO */
 /* ===================================== */
 
@@ -589,47 +514,7 @@ h1 {
 }
 
 /* ===================================== */
-/* RESPONSIVE ESENCIAS */
-/* ===================================== */
-
-@media (max-width: 768px) {
-    #esencias {
-        padding: 1rem;
-    }
-
-    /* CAMBIAR A 1 COLUMNA EN MÓVIL */
-    .esencias-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .esencias-col {
-        padding: 1.5rem;
-    }
-
-    .esencias-list li {
-        font-size: 0.9rem;
-        margin-bottom: 0.7rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .esencias-col {
-        padding: 1.2rem;
-    }
-
-    .esencias-col .category-title {
-        font-size: 1.1rem;
-        padding: 0.6rem;
-    }
-
-    .esencias-list li {
-        font-size: 0.85rem;
-    }
-}
-
-/* ===================================== */
-/* RESPONSIVE - MENÚ HAMBURGUESA MÓVIL */
+/* RESPONSIVE - TABLETS Y MÓVILES */
 /* ===================================== */
 
 @media (max-width: 768px) {
@@ -707,31 +592,52 @@ h1 {
         text-align: left;
     }
 
-    /* Items del menú móvil */
+    /* ===== ITEMS DEL MENÚ EN MÓVIL ===== */
+    
+    /* CAMBIAR A DISEÑO VERTICAL CON PADDING ALREDEDOR */
     .menu-item {
-        margin-bottom: 1rem;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
     }
 
+    /* IMAGEN ARRIBA - CON BORDER RADIUS */
     .item-image {
-        height: 160px;
+        width: 100%;
+        min-width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     .item-content {
-        padding: 0.8rem;
+        padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    /* TÍTULO Y PRECIO UNO DEBAJO DEL OTRO */
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 0.8rem;
     }
 
     .item-name {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        width: 100%;
     }
 
     .item-price {
-        font-size: 1.05rem;
+        font-size: 1.4rem;
     }
 
     .item-description {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 
+    /* ===== CONTACTO Y REDES SOCIALES ===== */
+    
     .contact-info {
         grid-template-columns: 1fr;
     }
@@ -747,13 +653,32 @@ h1 {
         min-width: auto;
     }
 
-    /* Esencias responsive */
+    /* ===== ESENCIAS RESPONSIVE ===== */
+    
+    #esencias {
+        padding: 1rem;
+    }
+
+    /* CAMBIAR A 1 COLUMNA EN MÓVIL */
     .esencias-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .esencias-col {
+        padding: 1.5rem;
+    }
+
+    .esencias-list li {
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
     }
 }
 
-/* Extra optimización para pantallas muy pequeñas */
+/* ===================================== */
+/* RESPONSIVE - MÓVILES PEQUEÑOS */
+/* ===================================== */
+
 @media (max-width: 480px) {
     .container {
         padding: 1rem 0.5rem;
@@ -777,12 +702,45 @@ h1 {
         padding: 0.5rem 0.6rem;
     }
 
+    /* ===== ITEMS DEL MENÚ ===== */
+    
+    .menu-item {
+        padding: 0.8rem;
+    }
+
+    .item-image {
+        height: 220px;
+        border-radius: 6px;
+    }
+
+    .item-content {
+        padding: 1rem 0.3rem 0.3rem 0.3rem;
+    }
+
     .item-name {
-        font-size: 0.95rem;
+        font-size: 1.2rem;
     }
 
     .item-price {
-        font-size: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .item-description {
+        font-size: 0.9rem;
+    }
+
+    /* ===== ESENCIAS ===== */
+    
+    .esencias-col {
+        padding: 1.2rem;
+    }
+
+    .esencias-col .category-title {
+        font-size: 1.1rem;
+        padding: 0.6rem;
+    }
+
+    .esencias-list li {
+        font-size: 0.85rem;
     }
 }
-
