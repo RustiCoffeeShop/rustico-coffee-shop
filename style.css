@@ -288,6 +288,12 @@ h1 {
     border-radius: 12px;
 }
 
+/* Bebidas sin imagen - diseño vertical normal */
+.menu-item.bebida:not(:has(img)) {
+    flex-direction: column;
+    padding: 1rem;
+}
+
 .menu-item.bebida .item-content {
     padding: 1rem 1.5rem;
 }
@@ -637,9 +643,8 @@ h1 {
         width: 100%;
         min-width: 100%;
         height: 250px;
-        object-fit: contain;
+        object-fit: cover;
         border-radius: 12px;
-        background-color: white;
     }
 
     /* ===== BEBIDAS MANTIENEN DISEÑO HORIZONTAL EN MÓVIL ===== */
@@ -650,11 +655,17 @@ h1 {
         align-items: center;
     }
 
+    /* Bebidas sin imagen en móvil - diseño vertical */
+    .menu-item.bebida:not(:has(img)) {
+        flex-direction: column;
+    }
+
     .menu-item.bebida .item-image {
         width: 140px;
         min-width: 140px;
         height: 180px;
         object-fit: contain;
+        background-color: white;
         margin-right: 0;
     }
 
@@ -781,8 +792,7 @@ h1 {
     .item-image {
         height: 220px;
         border-radius: 6px;
-        object-fit: contain;
-        background-color: white;
+        object-fit: cover;
     }
 
     /* ===== BEBIDAS EN MÓVILES PEQUEÑOS ===== */
@@ -791,6 +801,13 @@ h1 {
         width: 120px;
         min-width: 120px;
         height: 160px;
+        object-fit: contain;
+        background-color: white;
+    }
+
+    /* Bebidas sin imagen en móviles pequeños */
+    .menu-item.bebida:not(:has(img)) {
+        flex-direction: column;
     }
 
     .menu-item.bebida .item-content {
