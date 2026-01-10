@@ -290,7 +290,7 @@ h1 {
 .item-name {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #3D2B1F;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -326,12 +326,11 @@ h1 {
 
     /* IMAGEN ARRIBA - CON BORDER RADIUS */
     .item-image {
-        width: 280px;
-    min-width: 280px;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    flex-shrink: 0;
+        width: 200%;
+        min-width: 200%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
     }
 
     .item-content {
