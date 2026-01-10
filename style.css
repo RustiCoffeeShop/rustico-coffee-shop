@@ -269,6 +269,37 @@ h1 {
     flex-shrink: 0;
 }
 
+/* ===================================== */
+/* ESTILO ESPECIAL PARA BEBIDAS */
+/* ===================================== */
+
+.menu-item.bebida {
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu-item.bebida .item-image {
+    width: 180px;
+    min-width: 180px;
+    height: 200px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.menu-item.bebida .item-content {
+    padding: 1rem 1.5rem;
+}
+
+.menu-item.bebida .item-name {
+    font-size: 1.3rem;
+}
+
+.menu-item.bebida .item-description {
+    font-size: 0.95rem;
+}
+
 /* CONTENIDO A LA DERECHA - MÁS CENTRADO */
 .item-content {
     padding: 1.2rem 2.5rem;
@@ -606,8 +637,47 @@ h1 {
         width: 100%;
         min-width: 100%;
         height: 250px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 12px;
+        background-color: white;
+    }
+
+    /* ===== BEBIDAS MANTIENEN DISEÑO HORIZONTAL EN MÓVIL ===== */
+    
+    .menu-item.bebida {
+        flex-direction: row;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .menu-item.bebida .item-image {
+        width: 140px;
+        min-width: 140px;
+        height: 180px;
+        object-fit: contain;
+        margin-right: 0;
+    }
+
+    .menu-item.bebida .item-content {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .menu-item.bebida .item-header {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .menu-item.bebida .item-name {
+        font-size: 1.1rem;
+    }
+
+    .menu-item.bebida .item-price {
+        font-size: 1.2rem;
+    }
+
+    .menu-item.bebida .item-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
     }
 
     .item-content {
@@ -711,6 +781,32 @@ h1 {
     .item-image {
         height: 220px;
         border-radius: 6px;
+        object-fit: contain;
+        background-color: white;
+    }
+
+    /* ===== BEBIDAS EN MÓVILES PEQUEÑOS ===== */
+    
+    .menu-item.bebida .item-image {
+        width: 120px;
+        min-width: 120px;
+        height: 160px;
+    }
+
+    .menu-item.bebida .item-content {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .menu-item.bebida .item-name {
+        font-size: 1rem;
+    }
+
+    .menu-item.bebida .item-price {
+        font-size: 1.1rem;
+    }
+
+    .menu-item.bebida .item-description {
+        font-size: 0.8rem;
     }
 
     .item-content {
