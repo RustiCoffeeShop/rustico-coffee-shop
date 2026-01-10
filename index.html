@@ -18,14 +18,16 @@
         <h1>RUSTICO COFFEE SHOP</h1>
         <p class="subtitle">MENÚ</p>
     </header>
-
-    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
-        ☰ Menú
-    </button>
     
-    <nav class="nav" id="mainNav">
+    <nav class="nav">
+    <!-- Botón hamburguesa (solo visible en móvil) -->
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+        <span>Menú</span>
+    </button>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
+
             <!-- Menú Desayunos con Dropdown -->
             <li class="dropdown">
                 <a class="dropdown-toggle">
@@ -1419,4 +1421,3 @@
         </div>
     </section>
 </div>
-
